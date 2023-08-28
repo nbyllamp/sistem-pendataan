@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistem Pendataan Alat Tata Busana</title>
     <link rel="stylesheet" href="style.css">
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-        
 </head>
 <body>
-    <h1>Sistem Pendataan Alat<br>di Tata Busana</h1>
+    <h1>Sistem Pendataan Alat Tata Busana <br>
+    Tahun 2023</h1>
+    <div class="container">
     <a href="tambah.html"><button class="tambah">Tambah</button></a> 
     <h4>Total Barang : 3</h4>
+  <form action="/search" id="hbz-searchbox" method="get"> <span class="hbz-buttonwrap"><button class="hbz-submit" value="" type="submit"></button>
+    </span> 
+    <input type="text" name="q" id="hbz-input" placeholder="Search..." /> <input type="hidden" name="max-results" value="8" /> </form>
     <table>
         <thead>
             <th>No</th>
             <th>Nama Barang</th>
             <th>Jumlah</th>
             <th>Merek</th>
-            <th>Kondisi</th>
+            <th>Spesifikasi</th>
+            <th>Keterangan</th>
             <th>Aksi</th>
         </thead>
         <tbody>
@@ -29,7 +32,8 @@
                 <td>Mesin Jahit</td>
                 <td>5</td>
                 <td>Brother</td>
-                <td>Baru</td>
+                <td>Model 15</td>
+                <td>1 rusak</td>
                 <td>
                     <a href="detail.html"><button class="detail">Detail</button></a> |
                     <a href="edit.html"><button class="edit">Edit</button></a> |
@@ -41,6 +45,7 @@
                 <td>Mesin Lubang Kancing</td>
                 <td>3</td>
                 <td>Jack</td>
+                <td>JH8530A</td>
                 <td>Baru</td>
                 <td>
                     <a href="detail.html"><button class="detail">Detail</button></a> |
@@ -53,7 +58,8 @@
                 <td>Mesin Bordir</td>
                 <td>10</td>
                 <td>Janome</td>
-                <td>Bekas</td>
+                <td>6180</td>
+                <td>5 terpakai</td>
                 <td>
                     <a href="detail.html"><button class="detail">Detail</button></a> |
                     <a href="edit.html"><button class="edit">Edit</button></a> |
@@ -62,19 +68,29 @@
             </tr>
             <tr>
                 <td>4</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Alat Pres Kancing</td>
+                <td>7</td>
+                <td>Brother</td>
+                <td>SE300</td>
+                <td>2 baru</td>
+                <td>
+                    <a href="detail.html"><button class="detail">Detail</button></a> |
+                    <a href="edit.html"><button class="edit">Edit</button></a> |
+                    <a href="#"><button class="hapus">Hapus</button></a>
+                </td>
             </tr>
             <tr>
                 <td>5</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Patung Boneka Utuh</td>
+                <td>10</td>
+                <td>Manekin</td>
+                <td>Pria dan Wanita</td>
+                <td>2 rusak</td>
+                <td>
+                    <a href="detail.html"><button class="detail">Detail</button></a> |
+                    <a href="edit.html"><button class="edit">Edit</button></a> |
+                    <a href="#"><button class="hapus">Hapus</button></a>
+                </td>
             </tr>
             <tr>
                 <td>6</td>
@@ -83,9 +99,30 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
         </tbody>
+
     </table>
+    </div>
 </body>
 
 </html>
